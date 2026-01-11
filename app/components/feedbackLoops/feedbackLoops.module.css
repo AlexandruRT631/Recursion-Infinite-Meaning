@@ -1,0 +1,13 @@
+.videoWrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.videoWrapper iframe {
+  width: 100%;
+  max-width: 1080px;
+  aspect-ratio: 16 / 9;
+  border: 1px solid var(--accent);
+  border-radius: 12px;
+}
