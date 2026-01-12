@@ -6,8 +6,7 @@ import styles from "./fractals.module.css";
 
 export default function Fractals() {
   return (
-    <Section>
-      <h2>Fractals</h2>
+    <Section title="Fractals">
       <p>Fractals are geometric forms generated through recursive rules, where the same pattern repeats at different scales. Unlike traditional shapes, fractals reveal new detail the closer you look. Zooming in does not simplify the image - it reproduces the structure again, often endlessly.</p>
       <p>A single mathematical rule is applied repeatedly, and each iteration builds upon the last. This makes fractals a clear example of recursion made visible: the output of one step becomes the input for the next.</p>
       <p>I find fractals especially compelling because they resist completion. Unlike the golden ratio, which converges toward balance, fractals never resolve into a final form. There is no natural stopping point. Each level suggests another level beneath it, creating a sense of infinite depth contained within a finite space.</p>

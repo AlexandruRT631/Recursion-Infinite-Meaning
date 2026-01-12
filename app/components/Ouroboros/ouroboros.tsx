@@ -4,9 +4,7 @@ import styles from "./ouroboros.module.css";
 
 export default function Ouroboros() {
   return (
-    <Section>
-      <h2>Ouroboros</h2>
-    
+    <Section title="Ouroboros">
       <div className={styles.introFlow}>
         <div className={styles.floatImage}>
           <Image 

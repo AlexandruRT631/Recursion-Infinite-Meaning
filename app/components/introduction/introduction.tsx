@@ -4,9 +4,7 @@ import styles from "./introduction.module.css";
 
 export default function Introduction() {
   return (
-    <Section>
-      <h2>What is recursion</h2>
-
+    <Section title="What is recursion">
       <div className={styles.introFlow}>
         <div className={styles.floatImage}>
           <Image

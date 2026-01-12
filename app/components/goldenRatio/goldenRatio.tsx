@@ -5,9 +5,7 @@ import styles from "./goldenRatio.module.css";
 
 export default function GoldenRatio() {
   return (
-    <Section>
-      <h2>Golden Ratio</h2>
-
+    <Section title="Golden Ratio">
       <div className={styles.introFlow}>
         <div className={styles.floatImage}>
           <Image 

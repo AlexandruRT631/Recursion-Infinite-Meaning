@@ -34,9 +34,9 @@ export default function FibonacciExplorer({
 
   return (
     <section aria-labelledby="fib-title" className={styles.fibCard}>
-      <h4 id="fib-title" className={styles.fibTitle}>
+      <h3 id="fib-title" className={styles.fibTitle}>
         Fibonacci (interactive)
-      </h4>
+      </h3>
 
       <p className={styles.fibLead}>
         Each term is the sum of the two before it:{" "}

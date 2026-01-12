@@ -29,7 +29,7 @@
   }
 }
 
-.sectionInner h2 {
+.sectionInner .sectionTitle {
   color: var(--accent);
   font-size: clamp(2.25rem, 4vw, 3rem);
   line-height: 1.15;
@@ -41,7 +41,7 @@
   margin-bottom: 3rem;
 }
 
-.sectionInner h2::after {
+.sectionInner .sectionTitle::after {
   content: "";
   display: block;
   width: 4rem;
@@ -60,7 +60,7 @@
   color: inherit;
 }
 
-.sectionInner h1 {
+.sectionInner h2 {
   font-size: clamp(2.25rem, 4vw, 3rem);
   line-height: 1.15;
 
@@ -71,4 +71,15 @@
   margin-bottom: 3rem;
 
   text-align: center;
+  color: color-mix(in srgb, var(--foreground) 85%, var(--accent) 15%);
+}
+
+.sectionInner h2::after {
+  content: "";
+  display: block;
+  width: 5rem;
+  height: 4px;
+  margin: 1rem auto 0;
+  background: var(--accent);
+  opacity: 0.6;
 }

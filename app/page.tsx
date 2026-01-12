@@ -22,7 +22,7 @@ export default function Home() {
         <FeedbackLoops />
         
         <Section>
-          <h1>So...</h1>
+          <h2>So...</h2>
           <p>Recursion describes how patterns repeat, but it also reveals where repetition must end. Across symbols, mathematics, natural forms, and systems, recursion appears as a powerful method for generating complexity. Yet in every example, its value depends on the presence of limits, balance, or intervention.</p>
           <p>The ouroboros shows recursion without resolution. The golden ratio shows recursion that converges. Fractals reveal recursion that expands beyond completion. Feedback loops demonstrate how recursive processes shape real systems over time. Together, these examples inspire me on how I understand repetition, as a structure that carries memory and consequence.</p>
           <p>For me, recursion is more than just a technical concept. It is a way of recognizing patterns in thinking, learning, and behavior. It explains how habits form, how systems stabilize or spiral, and how simple rules can produce outcomes far larger than their origins.</p>

@@ -3,9 +3,7 @@ import styles from "./feedbackLoops.module.css";
 
 export default function FeedbackLoops() {
   return (
-    <Section>
-      <h2>Feedback loops</h2>
-
+    <Section title="Feedback loops">
       <p>A feedback loop is a system in which the output of a process becomes an input to the same process. Instead of ending after one cycle, the result returns and influences what happens next. In this sense, feedback loops are recursion extended through time: the system continuously updates itself using its own outcomes.</p>
       <p>In programming, feedback loops appear in different forms. Recursive functions are a direct expression of this idea, where a function calls itself with modified input until a base case is reached. Each call depends on the result of the previous one. Without a stopping condition, the function does not resolve and instead collapses into infinite recursion.</p>
       <p>Feedback loops also appear at a larger scale in software systems. When training machine learning models, especially neural networks, the model produces an output that is evaluated against a target. The error from that evaluation is then fed back into the system to adjust the model’s parameters. This process repeats many times, gradually shaping the model’s behavior.</p>
