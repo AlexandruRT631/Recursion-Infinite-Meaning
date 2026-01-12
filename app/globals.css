@@ -64,7 +64,7 @@ h1::after {
   margin-bottom: 10rem;
 }
 
-.pageTitle p {
+.pageTitle h2 {
   font-size: clamp(1.1rem, 2.5vw, 1.35rem);
   color: rgba(0, 0, 0, 0.65);
   max-width: 60ch;
@@ -73,7 +73,7 @@ h1::after {
 }
 
 @media (prefers-color-scheme: dark) {
-  .pageTitle p {
+  .pageTitle h2 {
     color: rgba(255, 255, 255, 0.7);
   }
 }

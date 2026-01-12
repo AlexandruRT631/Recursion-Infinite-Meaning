@@ -10,7 +10,7 @@ export default function GoldenRatio() {
         <div className={styles.floatImage}>
           <Image 
             src="/golden_spiral.gif"
-            alt="A image of a snake eating its own tail."
+            alt="A video of the golden spiral, where the shape is infinitely repeated when magnified."
             fill
             sizes="(max-width: 768px) 100vw, 40vw"
             priority

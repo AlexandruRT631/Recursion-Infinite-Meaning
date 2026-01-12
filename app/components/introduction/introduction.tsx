@@ -9,7 +9,7 @@ export default function Introduction() {
         <div className={styles.floatImage}>
           <Image
             src="/droste.jpg"
-            alt="A visual form of recursion known as the Droste effect. In this image designed by Jan Misset in 1904, a woman holds an object that contains a smaller image of her holding an identical object, which in turn contains a smaller image of herself holding an identical object, and so forth."
+            alt="A woman holding an object that contains a smaller image of her holding an identical object."
             fill
             sizes="(max-width: 768px) 100vw, 40vw"
             priority

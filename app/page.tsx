@@ -12,7 +12,7 @@ export default function Home() {
       <main>
         <div className="pageTitle">
           <h1>Recursion</h1>
-          <p>How simple rules create infinite meaning</p>
+          <h2>How simple rules create infinite meaning</h2>
         </div>
 
         <Introduction />

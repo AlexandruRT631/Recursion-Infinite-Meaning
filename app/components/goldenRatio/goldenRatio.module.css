@@ -83,7 +83,7 @@
 .button {
   padding: 10px 12px;
   border-radius: 10px;
-  background: white;
+  background: rgba(255, 255, 255, 0.08);
   cursor: pointer;
   border: 1px solid var(--accent);
   color: var(--accent);
@@ -91,7 +91,9 @@
 
 .button:disabled,
 .button[aria-disabled="true"] {
-  background: rgba(0, 0, 0, 0.04);
+  background: rgba(255, 255, 255, 0.04);
+  color: rgba(255, 255, 255, 0.45);
+  border-color: rgba(255, 255, 255, 0.15);
   cursor: not-allowed;
 }
 
@@ -128,6 +130,7 @@
 .button:hover:not(:disabled) {
   background: var(--accent);
   color: white;
+  border-color: var(--accent);
 }
 
 .button:focus-visible {
