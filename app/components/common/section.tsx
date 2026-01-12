@@ -5,7 +5,7 @@ export default function Section({ children, title } : { children: ReactNode; tit
   return (
     <section className={styles.section}>
       <div className={styles.sectionInner}>
-        {title && <div className={styles.sectionTitle}>{title}</div>}
+        {title && <h2>{title}</h2>}
         {children}
       </div>
     </section>
