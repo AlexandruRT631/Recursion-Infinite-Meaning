@@ -16,3 +16,21 @@
   background-size: 300px 300px;
   background-position: center;
 }
+
+.mobileFigure {
+  margin: 1.5rem 0 0;
+}
+
+.mobileImage {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  display: block;
+}
+
+.mobileCaption {
+  margin-top: 0.75rem;
+  opacity: 0.85;
+  font-size: 0.95rem;
+  line-height: 1.4;
+}

@@ -1,5 +1,8 @@
+"use client";
+
 import { useMemo, useState } from "react";
 import styles from "./goldenRatio.module.css";
+import { useIsMobile } from "../common/hooks/useIsMobile";
 
 export default function FibonacciExplorer({
   initial = [1, 1],
@@ -8,6 +11,8 @@ export default function FibonacciExplorer({
   initial?: number[];
   maxTerms?: number;
 }) {
+  const isMobile = useIsMobile();
+
   const [seq, setSeq] = useState<number[]>(initial);
   const phi = (1 + Math.sqrt(5)) / 2;
   const canAdd = seq.length < maxTerms;
@@ -32,11 +37,44 @@ export default function FibonacciExplorer({
     return { a, b, ratio, diff };
   }, [seq, phi]);
 
+  if (isMobile) {
+    return (
+      <section aria-labelledby="fib-title" className={styles.fibCard}>
+        <h3 id="fib-title" className={styles.fibTitle}>
+          Fibonacci sequence
+        </h3>
+
+        <p className={styles.fibLead}>
+          The Fibonacci sequence is defined by a recursive rule:
+          <span className={styles.mono}> F(n) = F(n−1) + F(n−2)</span>.
+          As the sequence grows, the ratio between consecutive terms approaches
+          <span className={styles.mono}> φ ≈ {phi.toFixed(6)}</span>.
+        </p>
+
+        <div className={styles.sequence}>
+          1 → 1 → 2 → 3 → 5 → 8 → 13 → 21 → 34 → 55 → 89 → 144 → 233 → 377 → 610 → 987 → 1597 → 2584 → 4181 → 6765 → 10946 → 17711 → 28657 → 46368 → 75025 → …
+        </div>
+
+        <p className={styles.baseCaseNote}>
+          On smaller screens, the sequence is shown in a simplified form.
+          On larger screens, you can interactively generate terms and observe convergence.
+        </p>
+      </section>
+    );
+  }
+
   return (
     <section aria-labelledby="fib-title" className={styles.fibCard}>
       <h3 id="fib-title" className={styles.fibTitle}>
         Fibonacci (interactive)
       </h3>
+
+      <noscript>
+        <p>
+          JavaScript is disabled, so the interactive generator is unavailable.
+          Here are the first terms: 1 → 1 → 2 → 3 → 5 → 8 → 13 → 21 → 34 → 55 → 89 → 144 → 233 → 377 → 610 → 987 → 1597 → 2584 → 4181 → 6765 → 10946 → 17711 → 28657 → 46368 → 75025 → …
+        </p>
+      </noscript>
 
       <p className={styles.fibLead}>
         Each term is the sum of the two before it:{" "}
